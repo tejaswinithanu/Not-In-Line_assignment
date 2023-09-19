@@ -1,0 +1,93 @@
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 83px;
+  padding-left: 5vw;
+  padding-right: 2vw;
+}
+
+@media all and (max-width: 1024px) {
+  .navContainer {
+    padding-right: 5vw;
+  }
+}
+
+.logo {
+  width: 277px;
+  height: 60px;
+}
+
+@media all and (max-width: 1024px) {
+  .logo {
+    width: 127px;
+    height: 29px;
+  }
+}
+
+.menuOption {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding-right: 20px;
+}
+
+.active {
+  color: #138ed1;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media all and (max-width: 1024px) {
+  .optionsContainer {
+    display: none;
+  }
+}
+
+.optionButton {
+  width: 113px;
+  height: 35px;
+  border: none;
+  border-radius: 4px;
+  background: #00486c;
+  color: white;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 20px;
+}
+
+.playStoreButton {
+  width: 115px;
+  height: 35px;
+  background-color: #333333;
+  color: white;
+}
+
+@media all and (max-width: 1024px) {
+  .playStoreButton {
+    display: none;
+  }
+}
+
+.navMenuButton {
+  background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+}
+
+@media all and (min-width: 1025px) {
+  .navMenuButton {
+    display: none;
+  }
+}
