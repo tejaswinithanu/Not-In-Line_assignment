@@ -8,14 +8,28 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   background-image: linear-gradient(
     to right,
     #75cfff,
     white,
     rgba(242, 246, 248, 0)
   );
-  padding: 15px 7vw;
+  padding: 25px 7vw;
+}
+@media all and (max-width: 1024px) {
+  .formSection {
+    background-image: linear-gradient(to right, #75cfff, white);
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.leftFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .formContainer {
@@ -29,6 +43,14 @@
   flex-direction: column;
   justify-content: space-between;
 }
+@media all and (max-width: 1024px) {
+  .formContainer {
+    width: 312px;
+    height: 299px;
+    padding: 25px 20px;
+    order: 2;
+  }
+}
 
 .formHeading {
   color: #2f2f2f;
@@ -40,11 +62,22 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+@media all and (max-width: 1024px) {
+  .formHeading {
+    font-size: 18px;
+  }
+}
 
 .formIcon {
   width: 46px;
   height: 45.021px;
   color: #138ed1;
+}
+@media all and (max-width: 1024px) {
+  .formIcon {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .inputContainer {
@@ -65,6 +98,13 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+@media all and (max-width: 1024px) {
+  .formInput {
+    width: 204px;
+    height: 33px;
+    font-size: 12px;
+  }
+}
 
 .labelEle {
   color: #2f2f2f;
@@ -73,6 +113,11 @@
   font-style: normal;
   font-weight: 500;
   margin-left: 10px;
+}
+@media all and (max-width: 1024px) {
+  .labelEle {
+    font-size: 10px;
+  }
 }
 
 .formButton {
@@ -84,4 +129,101 @@
   border: none;
   color: white;
   font-size: 15px;
+}
+@media all and (max-width: 1024px) {
+  .formButton {
+    width: 156px;
+    height: 30px;
+    font-size: 10px;
+  }
+}
+
+.offerCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 34px;
+  background: #00a6ff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media all and (max-width: 1024px) {
+  .offerCard {
+    margin-bottom: 20px;
+  }
+}
+
+.offerText {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.offerFont {
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.spanEle {
+  font-weight: 600;
+}
+
+.textDecor {
+  text-decoration: line-through;
+}
+
+.heading {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+@media all and (max-width: 1024px) {
+  .heading {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.headingSpan {
+  color: #138ed1;
+}
+
+.strikedLine {
+  width: 270px;
+  height: 19px;
+}
+@media all and (max-width: 1024px) {
+  .strikedLine {
+    width: 140px;
+    height: 10px;
+  }
+}
+
+.testImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media all and (max-width: 1024px) {
+  .testImageContainer {
+    order: -1;
+    margin-bottom: 10px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .testingImg {
+    display: none;
+  }
 }

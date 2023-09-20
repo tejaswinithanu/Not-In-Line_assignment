@@ -11,7 +11,7 @@ const Home = () => (
     <Header />
     <div className="homeContainer">
       <div className="formSection">
-        <div>
+        <div className="leftFormContainer">
           <form className="formContainer">
             <h2 className="formHeading">Fill in the details to get a call</h2>
             <div className="inputContainer">
@@ -44,25 +44,29 @@ const Home = () => (
               Proceed
             </button>
           </form>
-          <div className="offerContainer">
-            <p>
+          <div className="offerCard">
+            <p className="offerText">
               Get a Full body checkup
-              <span>Now</span> at <span>5,999</span> <span>999</span>
+              <span className="spanEle"> Now</span> at{' '}
+              <span className="spanEle textDecor">Rs.5,999</span>{' '}
+              <span className="spanEle"> 999</span>
             </p>
-            <p>70% OFF</p>
+            <p className="offerFont">70% OFF</p>
           </div>
         </div>
-        <div>
+        <div className="testImageContainer">
           <div>
-            <h1>
-              <span>Best in class</span> lab tests!
+            <h1 className="heading">
+              <span className="headingSpan">Best in class</span> lab tests!
             </h1>
             <img
+              className="strikedLine"
               alt="underline"
               src="https://res.cloudinary.com/dqqijdyjr/image/upload/v1695132025/Vector_1_iwvdz2.png"
             />
           </div>
           <img
+            className="testingImg"
             alt="lab test"
             src="https://res.cloudinary.com/dqqijdyjr/image/upload/v1695132154/Component_1_i8hutx.png"
           />
